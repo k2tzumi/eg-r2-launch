@@ -5,14 +5,11 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  LITALICO SaaS Summit_2411　　
 drawings:
   persist: false
 transition: slide-left
-title: Welcome to Slidev
+title: 『eg-r2』の公開について
 mdc: true
 addons:
   - '@katzumi/slidev-addon-qrcode'
@@ -20,9 +17,11 @@ addons:
   - slidev-addon-rabbit
 ---
 
-# Welcome to Slidev
+# 『eg-r2』の公開について
 
-Presentation slides for developers @ v0.1.7
+LITALICO SaaS Summit_2411　Nov 15, 2024.  
+v0.0.1  
+@katzumi(かつみ)
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -34,7 +33,7 @@ Presentation slides for developers @ v0.1.7
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/k2tzumi/slidev-boilerplate" target="_blank" alt="GitHub" title="Open in GitHub"
+  <a href="https://github.com/k2tzumi/eg-r2-launch" target="_blank" alt="GitHub" title="Open in GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -46,29 +45,35 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 transition: fade-out
+layout: two-cols-header
 ---
 
-# What is Slidev？
+# 自己紹介
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+katzumi（かつみ）と申します。
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+「障害のない社会をつくる」をビジョンに掲げている「りたりこ」という会社に所属しています
+<a href="https://litalico.co.jp/">
+<img src="https://litalico.co.jp/ogp.png" class="w-40" />
+</a>
 
-<br>
-<br>
+以下のアカウントで活動しています。
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+::left::
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
+<div class="float-left">
+<img src="https://pbs.twimg.com/profile_images/1768978237210935296/idy9J4l6_400x400.jpg" class="rounded-full w-40 mr"/>  
+<simple-icons-x /> <a href="https://twitter.com/katzchum">katzchum</a></div>  
+<QRCode :width="180" :height="180" value="https://twitter.com/katzchum" color="4329B9" image="Logo_of_X.svg" />
+
+::right::
+
+<img src="https://avatars.githubusercontent.com/u/1182787?v=4" class="rounded-full w-40 mr-12"/>
+
+<logos-github-octocat /> [k2tzumi](https://github.com/k2tzumi)  
+<simple-icons-zenn /> [katzumi](https://zenn.dev/katzumi)  
+
+<br />
 
 <style>
 h1 {
@@ -82,364 +87,243 @@ h1 {
 }
 </style>
 
-<!--
-Here is another comment.
--->
+---
+layout: default
+transition: fade-out
+---
+
+# eg-r2 プレリリース
+法改正リリース後に社内のみ先行公開していました
+
+<Transform :scale="0.6">  
+  <img src="./prerelease.png" />
+</Transform>
+
+---
+layout: statement
+---
+
+# 祝！オープンソース化！ 🎉
+たぶん LITALICO 初
 
 ---
 layout: default
+transition: slide-up
 ---
 
-# Table of contents
+# packagistにも公開されています
+https://packagist.org/packages/litalico-engineering/eg-r2
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+`composer require litalico-engineering/eg-r2` で直ぐに使えます。
 
-<Toc maxDepth="1"></Toc>
+---
+
+# eg-r2 とは？
+Easy request validation and route generation from open API specifications
+
+2 つのことを簡単(Easy)にすることを目的としています
+
+<v-clicks>
+
+1. リクエストバリデーション
+2. ルート生成
+
+</v-clicks>
 
 ---
 transition: slide-up
-level: 2
 ---
 
-# Navigation
+# 前提
+require
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# Code
-
-Use code snippets and get the highlighting directly！[^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+* PHP8.2 以上  
+PHP Attributes で API Spec を記述する為
+* Laravel9.0 以上
+最新バージョン(version1.0.0)以降は 11.0 以上
+* [swagger-php](https://zircote.github.io/swagger-php/)で API 仕様書を OpenAPI V3 形式で記述
 
 ---
 
-# Components
+# リクエストのバリデーション自動生成
+Easy request validation
 
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
+OpenAPI でスキーマ定義しておけば、バリデーションが自動生成されます！
 
 ---
-class: px-20
+transition: view-transition
 ---
 
-# Themes
+# As-is
+こんな感じで FormRequest のクラス定義していますよね？
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+<span v-mark.circle.red="1">別途 API 仕様書を記述する必要</span>があります
 
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
+```php
+/**
+ * @property int $age
+ * @property string $name
+ * @property bool $is_active
+ */
+class MyFormRequest extends FormRequest
+{
+  public function rules()
+  {
+    return [
+      'age' => 'required|integer',
+      'name' => 'required|string',
+      'is_active' => 'required|boolean',
+    ];
   }
 }
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
 ```
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+---
+transition: slide-up
+---
+
+# To-be
+こんな感じで FormRequest に OpenAPI を Spec を Attribute を記述するだけ！
+
+Trait を追加するだけ！<span v-mark.circle.red="1">その他の記述不要</span>  
+
+```php
+#[Schema(title: 'My request', required:['age', 'name', 'is_active'])]
+class MyFormRequest extends FormRequest
+{
+  use RequestRuleGeneratorTrait, FormRequestPropertyHandlerTrait;  
+
+  #[Property(property: 'age', type: 'integer', format: 'int64')]
+  public int $age;
+
+  #[Property(property: 'name', type: 'string')]
+  public string $name;
+
+  #[Property(property: 'is_active', type: 'boolean')]
+  public boolean $is_active;
+
+  // roulesメソッドはtraitで自動生成しているので不要
+}
 ```
 
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+リクエストパラメータを型安全に扱えます！
 
 ---
-src: ./pages/multiple-entries.md
-hide: false
----
+
+# 何が嬉しいのか？
+eg-r2 の狙い
+
+* API 仕様書と実装の乖離を発生させない！
+* 手数が減り気になりポイントも減る  
+全体の記述量も減るのでは？
 
 ---
-layout: center
-class: text-center
+transition: fade
 ---
 
-# Learn More
+# ルーティング生成の自動化
+Easy route generation
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+コマンド一発でルーティングの自動生成  
+`php artisan eg-r2:generate-route`  
 
-<div class="flex justify-center">
-  <QRCode value="https://github.com/k2tzumi/slidev-boilerplate" color="0e0c0d" image="github-mark.svg" />
-</div>
+<Transform :scale="0.7">  
+
+  ```php
+  /**
+  * This file is auto-generated.
+  */
+
+  declare(strict_types=1);
+
+  Route::as('api')->group(static function (): void {
+      Route::controller('App\Http\Controllers\Pet')->group(static function (): void {
+          Route::post('/pet', 'addPet');
+          Route::put('/pet', 'updatePet');
+          Route::get('/pet/findByStatus', 'findPetsByStatus');
+          Route::post('/pet/{petId}', 'updatePetWithForm');
+          Route::delete('/pet/{petId}', 'deletePet');
+          Route::post('/pet/{petId}/uploadImage', 'uploadFile');
+      });
+      Route::controller('App\Http\Controllers\Store')->group(static function (): void {
+          Route::get('/store', 'getInventory');
+          Route::post('/store/order', 'placeOrder');
+          Route::get('/store/order/{orderId}', 'getOrderById');
+          Route::delete('/store/order/{orderId}', 'deleteOrder');
+      });
+  });
+  ```
+
+</Transform>
+
+
+---
+
+# なぜ eg-r2 を作ったのか？
+全ては法改正に爆速で対応するシステムを作る為
+
+* API 仕様書の品質を高めるため！  
+API 仕様書の品質が悪いと手戻りが発生してしまう  
+API 仕様の見直しで実装との乖離を発生させない
+* API 仕様書を先に公開して実装するため  
+各プロダクトと並行で開発する[^1]
+
+[^1]: スキーマ駆動開発といいます
+
+---
+
+# どうなったか？
+eg-r2 の効果
+
+多数の API を高品質且つ爆速で構築
+* 法改正を乗り越えることができました
+* 200 弱の API が eg-r2 によって作成
+* 1 つの API で 100 弱のパラメータが存在 
+* 法改正時に 80 の API 追加
+
+---
+transition: slide-up
+---
+
+# なぜ eg-r2 をオープンソース化したのか？
+OSS 化の狙い
+
+* 様々なユースケースに対応させるため  
+他のプロジェクトでも利用可能なように機能追加をしていきたい
+* フィードバックサイクルを回すため  
+スキーマ駆動開発の在り方をディスカッションしたい為  
+スキーマが先か？コードが先か？の問題を提起したい
+
+---
+
+# 今後について
+eg-r2 の発展について
+
+* 対応ユースケースの拡大  
+ドックフーディングしてくれる方募集中です
+* 社内外での発表して認知拡大
+
+---
+transition: fade
+---
+
+# 最後に
+絶賛募集中です
+
+We're contributing.
+
+---
+
+# Link
+
+* [eg-r2](https://github.com/litalico-engineering/eg-r2)  
+プロジェクトリポジトリ
+* [eg-r2-example](https://github.com/k2tzumi/eg-r2-example)  
+サンプルリポジトリ
+* [頑張らないスキーマ駆動開発を支える『eg-r2』を公開しました](https://zenn.dev/litalico/articles/what-is-eg-r2)
+
+---
+layout: end
+---
+
+ご清聴ありがとうございました
