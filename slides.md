@@ -108,6 +108,19 @@ layout: statement
 
 ---
 layout: default
+---
+
+# オープンソースソフトウェアとは？
+What is OSS?
+
+<blockquote>
+  <p>オープンソースソフトウェア（Open Source Software、略称: OSS）とは、利用者の目的を問わずソースコードを使用、調査、再利用、修正、拡張、再配布が可能なソフトウェアの総称である。</p>
+</blockquote>
+
+[wikipedia より](https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2)
+
+---
+layout: default
 transition: slide-up
 ---
 
