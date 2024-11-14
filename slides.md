@@ -116,6 +116,15 @@ https://packagist.org/packages/litalico-engineering/eg-r2
 
 `composer require litalico-engineering/eg-r2` で直ぐに使えます。
 
+
+<div class="box-text-memo">
+Packagist は Composer のメインリポジトリです。<br />
+Composer でインストール可能な公開 PHP パッケージが集約されています。<br />  
+Packagistには、たくさんのパッケージが登録されています。<br />  
+これらのパッケージは他の開発者が作った便利な部品で、プログラマーは自分のプロジェクトに簡単に取り込むことができます。
+</div>
+
+
 ---
 
 # eg-r2 とは？
@@ -316,7 +325,7 @@ eg-r2 の効果
 * 200 弱の API が eg-r2 によって作成
 * 1 つの API で 100 弱のパラメータが存在 
 * 法改正時に 80 の API を追加  
-短期間にコピペで量産することができる
+短期間にコピペで量産することもできる
 
 
 ---
