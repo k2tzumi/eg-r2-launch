@@ -5,11 +5,11 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  LITALICO SaaS Summit_2411　　
+  PHPカンファレンス2024 アンカンファレンス
 drawings:
   persist: false
 transition: slide-left
-title: 『eg-r2』の公開について
+title: 『eg-r2』のご紹介
 mdc: true
 addons:
   - '@katzumi/slidev-addon-qrcode'
@@ -17,10 +17,10 @@ addons:
   - slidev-addon-rabbit
 ---
 
-# 『eg-r2』の公開について
+# 『eg-r2』のご紹介
 
-LITALICO SaaS Summit_2411　Nov 15, 2024.  
-v0.0.1  
+PHPカンファレンス2024　Dec 22, 2024.  
+v0.0.2  
 @katzumi(かつみ)
 
 <div class="pt-12">
@@ -86,6 +86,41 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+---
+layout: default
+transition: fade-out
+---
+
+# アドカレがプチバズしました🎉
+https://b.hatena.ne.jp/site/zenn.dev/litalico
+
+
+初めての100ブクマオーバー
+
+<Transform :scale="0.6">  
+  <img src="./hatena-bookmark.png" />
+</Transform>
+
+---
+layout: default
+transition: fade-out
+---
+
+# 本日のお題
+OSS化したツールの紹介をします！
+
+<Transform :scale="0.6">  
+  <img src="./zenn.png" />
+</Transform>
+
+---
+layout: center
+transition: fade-out
+---
+
+# ここから先のスライドについて
+社内イベントで発表した非エンジニア向けのスライドになっています。
 
 ---
 layout: default
