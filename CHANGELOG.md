@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.2](https://github.com/k2tzumi/eg-r2-launch/compare/v0.0.1...v0.0.2) - 2024-12-23
+- For PHPConf JP 2024 by @k2tzumi in https://github.com/k2tzumi/eg-r2-launch/pull/16
+
 ## [v0.0.1](https://github.com/k2tzumi/eg-r2-launch/commits/v0.0.1) - 2024-11-29
 - First commit by @k2tzumi in https://github.com/k2tzumi/eg-r2-launch/pull/1
 - Bump @iconify-json/simple-icons from 1.2.11 to 1.2.13 by @dependabot in https://github.com/k2tzumi/eg-r2-launch/pull/4
