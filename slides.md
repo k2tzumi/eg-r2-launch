@@ -5,11 +5,11 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  LITALICO SaaS Summit_2411　　
+  PHPカンファレンス2024 アンカンファレンス
 drawings:
   persist: false
 transition: slide-left
-title: 『eg-r2』の公開について
+title: 『eg-r2』のご紹介
 mdc: true
 addons:
   - '@katzumi/slidev-addon-qrcode'
@@ -17,10 +17,10 @@ addons:
   - slidev-addon-rabbit
 ---
 
-# 『eg-r2』の公開について
+# 『eg-r2』のご紹介
 
-LITALICO SaaS Summit_2411　Nov 15, 2024.  
-v0.0.1  
+PHP カンファレンス 2024　Dec 22, 2024.  
+v0.0.2  
 @katzumi(かつみ)
 
 <div class="pt-12">
@@ -92,6 +92,41 @@ layout: default
 transition: fade-out
 ---
 
+# アドカレがプチバズしました🎉
+https://b.hatena.ne.jp/site/zenn.dev/litalico
+
+
+初めての 100 ブクマオーバー
+
+<Transform :scale="0.6">  
+  <img src="./hatena-bookmark.png" />
+</Transform>
+
+---
+layout: default
+transition: fade-out
+---
+
+# 本日のお題
+OSS 化したツールの紹介をします！
+
+<Transform :scale="0.6">  
+  <img src="./zenn.png" />
+</Transform>
+
+---
+layout: center
+transition: fade-out
+---
+
+# ここから先のスライドについて
+社内イベントで発表した非エンジニア向けのスライドになっています。
+
+---
+layout: default
+transition: fade-out
+---
+
 # eg-r2 プレリリース
 法改正リリース後に社内のみ先行公開していました
 
@@ -111,7 +146,7 @@ layout: default
 ---
 
 # オープンソースソフトウェアとは？
-What is OSS?
+What is OSS？
 
 <blockquote>
   <p>オープンソースソフトウェア（Open Source Software、略称: OSS）とは、利用者の目的を問わずソースコードを使用、調査、再利用、修正、拡張、再配布が可能なソフトウェアの総称である。</p>
