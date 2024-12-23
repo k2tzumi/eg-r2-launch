@@ -19,7 +19,7 @@ addons:
 
 # 『eg-r2』のご紹介
 
-PHPカンファレンス2024　Dec 22, 2024.  
+PHP カンファレンス 2024　Dec 22, 2024.  
 v0.0.2  
 @katzumi(かつみ)
 
@@ -96,7 +96,7 @@ transition: fade-out
 https://b.hatena.ne.jp/site/zenn.dev/litalico
 
 
-初めての100ブクマオーバー
+初めての 100 ブクマオーバー
 
 <Transform :scale="0.6">  
   <img src="./hatena-bookmark.png" />
@@ -108,7 +108,7 @@ transition: fade-out
 ---
 
 # 本日のお題
-OSS化したツールの紹介をします！
+OSS 化したツールの紹介をします！
 
 <Transform :scale="0.6">  
   <img src="./zenn.png" />
@@ -146,7 +146,7 @@ layout: default
 ---
 
 # オープンソースソフトウェアとは？
-What is OSS?
+What is OSS？
 
 <blockquote>
   <p>オープンソースソフトウェア（Open Source Software、略称: OSS）とは、利用者の目的を問わずソースコードを使用、調査、再利用、修正、拡張、再配布が可能なソフトウェアの総称である。</p>
